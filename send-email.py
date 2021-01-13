@@ -17,7 +17,7 @@ def handler(event, context):
     print(tabledetails)
     
     name = tabledetails["NewImage"]["Name"]["S"];
-    email = tabledetails["NewImage"]["Email"]["S"];
+    email = [tabledetails["NewImage"]["Email"]["S"]];
     url = tabledetails["NewImage"]["URL"]["S"];
     messagebody = """Hi %s!
     
@@ -30,7 +30,7 @@ Follow this link to return to your cart:
         data = ses.send_email(
             Source="sender@example.com",
             Destination={
-                'ToAddresses': [email]
+                'ToAddresses': email
             },
             Message={
                 'Subject': {
@@ -44,9 +44,8 @@ Follow this link to return to your cart:
             }
         )
         print("Email sent!")
+        return {"message": "Successfully executed"}
 
     except BaseException as e:
         print(e)
         raise(e)
-
-    return {"message": "Successfully executed"}

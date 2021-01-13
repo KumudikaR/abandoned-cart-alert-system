@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "add-db-entry.py",
         "cursor": {
-          "lineNumber": 22,
-          "column": 18
+          "lineNumber": 30,
+          "column": 17
         },
         "config": {
           "runtime": "python3.8",
@@ -28,13 +28,13 @@
             "config": {}
           }
         ],
-        "lastUpdated": 1610518079533,
+        "lastUpdated": 1610527447163,
         "testCases": {
           "01c749bc-3e1f-40fb-8b73-53dff9a62b4a": {
             "id": "01c749bc-3e1f-40fb-8b73-53dff9a62b4a",
             "name": "Test event",
             "functionId": "2e144c6e-e86f-4876-bc54-0242221a9d97",
-            "event": "{\r\n\"Name\": \"Kumudika\",\r\n\"Email\": \"kumudika.customer@some-email-domain.com\",\r\n\"URL\": \"http://online.business/checkout?cart_id=12345\"\r\n}",
+            "event": "{\r\n    \"Name\": \"Kumudika\",\r\n    \"Email\": \"kumudika.customer@some-email-domain.com\",\r\n    \"URL\": \"http://online.business/checkout?cart_id=12345\"\r\n}",
             "eventTemplate": "hello-world"
           }
         }
@@ -49,8 +49,8 @@
         "isRemovable": true,
         "filePath": "send-email.py",
         "cursor": {
-          "lineNumber": 33,
-          "column": 39
+          "lineNumber": 32,
+          "column": 26
         },
         "config": {
           "runtime": "python3.8",
@@ -70,7 +70,7 @@
             }
           }
         ],
-        "lastUpdated": 1610518138784,
+        "lastUpdated": 1610527415991,
         "customSecurityPolicy": {
           "Version": "2012-10-17",
           "Statement": [
@@ -90,7 +90,7 @@
       "2e144c6e-e86f-4876-bc54-0242221a9d97",
       "ea0f41a3-5e38-47bf-898c-90a1f4a8e926"
     ],
-    "currentFileId": "ea0f41a3-5e38-47bf-898c-90a1f4a8e926",
+    "currentFileId": "2e144c6e-e86f-4876-bc54-0242221a9d97",
     "resources": {
       "ddbhistory": {
         "name": "ddbhistory",
@@ -174,7 +174,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1610518084985
+    "lastSave": 1610527450019
   },
   "VCS_STATE": {
     "provider": "GitHub",

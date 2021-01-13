@@ -23,9 +23,8 @@ def handler(event, context):
             }
         )
         print("Successfully Saved entry from email:"+ email)
+        return {"message": "Successfully executed"}
 
     except BaseException as e:
         print(e)
         raise(e)
-   
-    return {"message": "Successfully executed"}
